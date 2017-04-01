@@ -2,6 +2,7 @@
 <html>
 <head>
 	<include file="Public:head" />
+	<link rel="stylesheet" href="__TMPL__Public/Css/page.css">
 	<script src="http://api.map.baidu.com/api?v=2.0&ak=NTH1H5XkD7ivevaVjQRWzngX"></script>
 	<style>
 		#allmap{
@@ -84,9 +85,7 @@
 				                        map.addControl(new BMap.OverviewMapControl());
 				                        var marker = new BMap.Marker(point);
 				                        map.addOverlay(marker);
-				                        var infoWinOpts = {}
-				                       
-				                        marker.addEventListener("click", function(){this.openInfoWindow(infoWin);});
+				                        
 									</script>
 								</div>
 							</div>
